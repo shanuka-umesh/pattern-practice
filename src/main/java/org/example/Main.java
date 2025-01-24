@@ -1,8 +1,28 @@
 package org.example;
 
+import  java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Main {
 
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int userInput;
+
+        logger.info("Program Started. Displaying pattern menu");
+
+        System.out.println("\nPlease select a pattern to view. \n\n 01. Star Pattern - i\n 02. Reverse Star Pattern - i \n 03. Star Pattern - ii\n 04. Star Pattern - iv\n 05. Star Pattern - v\n" +
+                " 06. Triangle Star Pattern\n 07. Right Arrow Head\n 08. Diamond Shape Pattern\n 09. Triangle Outline\n 10. Reverse Z Pattern\n 11. Square Outline Pattern\n 12. Z Pattern\n"
+        );
+        System.out.print("Enter your choice pattern number :");
+
+        userInput =  scanner.nextInt();
+        logger.info("User input correctly, Entered number :{}",userInput);
+
 
         // starPattern01(5);
         //  reverseStarPattern01(5);
@@ -15,7 +35,7 @@ public class Main {
         // triangleOutline(8);
         //  reverseZPattern(5);
         //  squreOutlinePattern(5);
-        zPattern(5);
+        // zPattern(5);
 
     }
 
