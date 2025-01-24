@@ -82,7 +82,7 @@ public class Main {
                 default:
             }
 
-            logger.info("Program Started. Displaying pattern menu");
+            logger.info("Program finished.");
 
         } catch (Exception e) {
 
