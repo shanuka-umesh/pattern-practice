@@ -93,13 +93,15 @@ public class Main {
 
     public static void starPattern01(int lineCount) {
 
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 1; i <= lineCount; i++) {
 
             for (int j = 0; j < i; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
-
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
 
     }
@@ -107,23 +109,28 @@ public class Main {
     public static void reverseStarPattern01(int linecount) {
 
 
+        StringBuilder stars = new StringBuilder();
+
         for (int i = linecount; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                System.out.print("*");
+               stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
     public static void starPattern03(int n) {   // Square Star pattern
 
         int i, j;
+        StringBuilder stars = new StringBuilder();
 
         for (i = 0; i < n; i++) {
             for (j = 0; j < n; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
