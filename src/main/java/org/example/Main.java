@@ -113,7 +113,7 @@ public class Main {
 
         for (int i = linecount; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-               stars.append("*");
+                stars.append("*");
             }
             logger.info(stars.toString());
             stars.setLength(0);
@@ -135,159 +135,194 @@ public class Main {
     }
 
 
-    public static void starPattern04(int n)    // sqare with middle blanks
+    public static void starPattern04(int n)    // square with middle blanks
     {
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 0; i < n; i++) {
             for (int j = 1; j <= n; j++) {
                 if (i == 0 || j == 0 || i == n - 1 || j == n - 1) {
-                    System.out.print("*");
+                    stars.append("*");
                 } else {
-                    System.out.print("");
+                    stars.append("");
                 }
 
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
 
     public static void starPattern05(int n) {
 
+        StringBuilder stars = new StringBuilder();
+
         for (int i = n; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
 
         for (int i = 2; i <= n; i++) {
             for (int j = 0; j < i; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
 
     public static void triangleStarPattern(int n)   // Full Triangle
     {
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
-                System.out.print(" ");
+                stars.append(" ");
             }
             for (int k = 0; k < (i * 2) - 1; k++) {
-                System.out.print("*");
+                stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
 
     public static void rightArrowHead(int n) {
+
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
         for (int i = n - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
 
     public static void diamonShapePattern(int n)  // not finished last part of the diamond
     {
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 0; i < n; i++) {
             for (int j = i; j <= n; j++) {
-                System.out.print(" ");
+                stars.append(" ");
             }
 
             for (int j = 0; j < (2 * i) - 1; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
 
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
-                System.out.print(" ");
+                stars.append(" ");
             }
             for (int j = i; j < n * 2 - 1; j++) {
-                System.out.print("*");
+                stars.append("*");
             }
 
 
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
 
     public static void triangleOutline(int lineCount) {
+
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 0; i < lineCount; i++) {
             for (int j = lineCount; j > i; j--) {
-                System.out.print(" ");
+                stars.append(" ");
             }
 
             if (i == 0 || i == lineCount) {
                 for (int k = 0; k <= i; k++) {
-                    System.out.print("* ");
+                    stars.append("* ");
                 }
             } else {
-                System.out.print("*");
+                stars.append("*");
 
                 for (int k = 1; k < i; k++) {
-                    System.out.print("  ");
+                    stars.append("  ");
                 }
 
-                System.out.print(" *");
+                stars.append(" *");
             }
 
 
-            System.out.println();
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
 
     public static void reverseZPattern(int lineCount) {
+
+        StringBuilder stars = new StringBuilder();
+
         for (int i = 0; i < lineCount; i++) {
             for (int j = 0; j < lineCount; j++) {
                 if (i == 0 || i == lineCount - 1 || i == j) {
-                    System.out.print(" *");
+                    stars.append(" *");
                 } else {
-                    System.out.print("  ");
+                    stars.append("  ");
                 }
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
     public static void squreOutlinePattern(int lineCount) {
+
+        StringBuilder stars = new StringBuilder();
+
         for (int raw = 0; raw < lineCount; raw++) {
             for (int column = 0; column < lineCount; column++) {
                 if (raw == 0 || raw == lineCount - 1 || column == 0 || column == lineCount - 1) {
-                    System.out.print("* ");
+                    stars.append("* ");
                 } else {
-                    System.out.print("  ");
+                    stars.append("  ");
                 }
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 
     public static void zPattern(int lineCount) {
+
+        StringBuilder stars = new StringBuilder();
+
         for (int raw = 0; raw < lineCount; raw++) {
             for (int column = 0; column < lineCount; column++) {
                 if (raw == 0 || raw == lineCount - 1) {
-                    System.out.print("* ");
+                    stars.append("* ");
                 } else {
-                    System.out.print("  ");
+                    stars.append("  ");
                 }
             }
-            System.out.println("");
+            logger.info(stars.toString());
+            stars.setLength(0);
         }
     }
 }
