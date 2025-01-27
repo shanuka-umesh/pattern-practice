@@ -24,17 +24,10 @@ To run this program, ensure that the following software is installed on your mac
   java Main
   ```
 
-### 4. Enable/Disable Patterns
-- Inside the `main` method, you will find commented-out method calls. Uncomment the method you wish to execute by removing the `//` at the beginning of the line.
-- **Example**:
-  ```java
-  starPattern01(); // Enable this line to run the Star Pattern 01 method
-  ```
-
-### 5. Recompile and Run
+### 4. Recompile and Run
 - After making changes to the `main` method, recompile and run the program as shown above.
 
-### 6. Run the Program in an IDE
+### 5. Run the Program in an IDE
 - Open your preferred IDE (e.g., IntelliJ IDEA, Eclipse, or Visual Studio Code).
 - Create a new project and import the `Main.java` file into the project.
 - Make sure the JDK is configured in your IDE:
@@ -47,4 +40,3 @@ To run this program, ensure that the following software is installed on your mac
   - **Visual Studio Code**: Open the `Main.java` file and click the `Run` button at the top of the editor.
 
 ---
-
