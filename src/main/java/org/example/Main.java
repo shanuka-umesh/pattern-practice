@@ -30,7 +30,7 @@ public class Main {
                 " 09. Triangle Outline\n" +
                 " 10. Reverse Z Pattern\n" +
                 " 11. Square Outline Pattern\n" +
-                " 12. Z Pattern\n"+
+                " 12. Z Pattern\n" +
                 " 13. Tree Pattern\n"
         );
         System.out.print("Enter your choice pattern number :");
@@ -87,6 +87,7 @@ public class Main {
                 default:
             }
 
+            System.out.println("");
             logger.info("Program finished.");
 
         } catch (Exception e) {
@@ -331,56 +332,53 @@ public class Main {
         }
     }
 
-    public static void treePattern()
-    {
-        int treeHeight=40;
-        int treeWidth= 25;
+    public static void treePattern() {
+        int treeHeight = 40;
+        int treeWidth = 34;
 
+        int radius = 5;
 
-        int leavesRadius = 10;
-        int centerX = leavesRadius;
-        int centerY = leavesRadius;
-
-
-        for(int i = 0 ; i <= treeHeight/3 ; i++) // root
+        for(int i=0 ; i<treeHeight/5 ; i++)
         {
-            for(int j=0 ; j<treeHeight/3 ; j++)
+            for(int j = 0; j < treeHeight / 3; j++)
             {
-              System.out.print(" ");
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+
+        for (int i = 0; i <= treeHeight / 3; i++) // root
+        {
+            for (int j = 0; j < treeHeight / 3; j++) {
+                System.out.print(" ");
             }
             System.out.print("{");
 
-            for (int j=0 ; j<5; j++)
-            {
+            for (int j = 0; j < 5; j++) {
                 System.out.print("~");
             }
             System.out.println("}");
         }
 
-        for(int i=treeHeight/3 ; i>treeHeight/9; i--)
-        {
-            for(int j=0 ; j<i ; j++)
-            {
+        for (int i = treeHeight / 3; i > treeHeight / 9; i--) {
+            for (int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
             System.out.print("/");
-            for(int j=0 ; j<(treeHeight/3-i) ; j++)
-            {
+            for (int j = 0; j < (treeHeight / 3 - i); j++) {
                 System.out.print("~");
             }
-            for(int j=0 ; j<5 ; j++)
-            {
+            for (int j = 0; j < 5; j++) {
                 System.out.print("~");
             }
-            for(int j=0 ; j<(treeHeight/3-i) ; j++)
-            {
+            for (int j = 0; j < (treeHeight / 3 - i); j++) {
                 System.out.print("~");
             }
             System.out.print("\\");
             System.out.println("");
         }
 
-        for(int i=0 ; i<treeWidth*2 ; i++) //land
+        for (int i = 0; i < treeWidth * 2; i++) //land
         {
             System.out.print("-");
         }
