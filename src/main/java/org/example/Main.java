@@ -45,6 +45,7 @@ public class Main {
             switch (userInput) {
                 case 1:
                     starPattern01(lineCount);
+                    logger.error("Hi this is a test");
                     break;
                 case 2:
                     reverseStarPattern01(lineCount);
